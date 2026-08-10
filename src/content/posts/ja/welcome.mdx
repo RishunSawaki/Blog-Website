@@ -1,0 +1,38 @@
+---
+title: "ブログの土台を組み立てる"
+description: "ルーティング、コンテンツ、レンダリング、公開までの流れをひとつにまとめた実装メモです。"
+date: "2026-08-08"
+updatedAt: "2026-08-08"
+tags:
+  - Next.js
+  - MDX
+  - アーキテクチャ
+category: "エンジニアリング"
+locale: "ja"
+slug: "welcome"
+featured: true
+---
+
+# ブログの土台を組み立てる
+
+## この構成にした理由
+
+ロケール付きルーティングとファイルベースの投稿管理に寄せると、個人ブログでは更新しやすくなります。
+
+## ルートの考え方
+
+- `/ja` と `/en` を起点にする
+- 投稿は `/ja/posts/[slug]` で開く
+- 検索は `/ja/search` にまとめる
+
+## サンプル
+
+```ts
+export function makePostHref(locale: "en" | "ja", slug: string) {
+  return `/${locale}/posts/${slug}`;
+}
+```
+
+## 次の拡張
+
+下書き管理や CMS を後から追加しても、今の構成なら壊しにくいです。

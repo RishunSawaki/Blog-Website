@@ -1,0 +1,38 @@
+---
+title: "Building the blog skeleton"
+description: "A practical overview of how the site is wired: routes, content, rendering, and deployment hygiene."
+date: "2026-08-08"
+updatedAt: "2026-08-08"
+tags:
+  - Next.js
+  - MDX
+  - Architecture
+category: "Engineering"
+locale: "en"
+slug: "welcome"
+featured: true
+---
+
+# Building the blog skeleton
+
+## Why this shape
+
+The site is designed around locale-prefixed routes, filesystem-backed posts, and server-rendered MDX.
+
+## Route map
+
+- `/en` or `/ja` for the homepage
+- `/en/posts/[slug]` for articles
+- `/en/search` for full-text discovery
+
+## Example code
+
+```ts
+export function routeFor(locale: "en" | "ja", slug: string) {
+  return `/${locale}/posts/${slug}`;
+}
+```
+
+## Next step
+
+The same base can be extended with drafts, authentication, or a CMS later.

@@ -1,0 +1,31 @@
+---
+title: "Search and theme toggling"
+description: "A small interface update that makes the blog easier to browse in different lighting and at different scales."
+date: "2026-08-06"
+tags:
+  - Search
+  - UI
+  - Accessibility
+category: "Product"
+locale: "en"
+slug: "search-and-theme"
+featured: false
+---
+
+## Search first
+
+Search works against titles, tags, categories, excerpts, and body text.
+
+## Theme switching
+
+The theme toggle persists a class-based preference, so the UI can respect system defaults while staying explicit.
+
+## A tiny snippet
+
+```tsx
+const accent = isDark ? "#22d3ee" : "#0f766e";
+```
+
+## Result
+
+The UI stays readable in both modes without changing the content model.
