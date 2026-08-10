@@ -11,14 +11,14 @@ export const localeLabels: Record<Locale, string> = {
 
 export const dictionary = {
   en: {
-    siteName: "Solo Notes",
+    siteName: "Uri's room",
     navHome: "Home",
     navPosts: "Posts",
     navSearch: "Search",
     navAbout: "About",
-    heroTitle: "A personal blog for shipping ideas in public.",
+    heroTitle: "Uri's personal blog",
     heroBody:
-      "Long-form notes, technical writeups, architecture sketches, and small experiments published from one place.",
+      "Posting about various things!",
     featuredPosts: "Featured posts",
     latestPosts: "Latest posts",
     allPosts: "All posts",
@@ -38,14 +38,14 @@ export const dictionary = {
     publishedAt: "Published"
   },
   ja: {
-    siteName: "Solo Notes",
+    siteName: "Uriの部屋",
     navHome: "ホーム",
     navPosts: "投稿一覧",
     navSearch: "検索",
     navAbout: "このサイトについて",
-    heroTitle: "アイデアをそのまま公開できる個人ブログ。",
+    heroTitle: "Uriの個人ブログ",
     heroBody:
-      "技術メモ、設計メモ、アーキテクチャ図、小さな実験をひとつの場所から発信します。",
+      "様々なことについて発信していきます!",
     featuredPosts: "注目記事",
     latestPosts: "新着記事",
     allPosts: "すべての記事",
