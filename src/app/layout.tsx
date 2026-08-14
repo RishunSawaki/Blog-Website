@@ -18,11 +18,11 @@ const displayFont = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://example.com"),
   title: {
-    default: "Solo Notes",
-    template: "%s | Solo Notes"
+    default: "Uri's room",
+    template: "%s | Uri's room"
   },
   description:
-    "A multilingual personal blog built with Next.js, TypeScript, Tailwind CSS, MDX, shiki, and Vercel-ready conventions."
+    "Uri's blog posting about various things!",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -3,7 +3,7 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #f5efe7;
+  --background: #fefaf1;
   --foreground: #111827;
   --surface: rgba(255, 255, 255, 0.78);
   --muted: #6b7280;
@@ -13,7 +13,7 @@
 }
 
 .dark {
-  --background: #050816;
+  --background: #363328;
   --foreground: #e5e7eb;
   --surface: rgba(15, 23, 42, 0.82);
   --muted: #9ca3af;
@@ -25,8 +25,8 @@
 html {
   scroll-behavior: smooth;
   background:
-    radial-gradient(circle at top, rgba(34, 211, 238, 0.12), transparent 28%),
-    linear-gradient(180deg, var(--background), color-mix(in oklab, var(--background) 84%, black));
+    radial-gradient(circle at top, rgba(34, 211, 238, 0.12), transparent 24%),
+    linear-gradient(180deg, var(--background), color-mix(in oklab, var(--background) 94%, black));
 }
 
 body {
