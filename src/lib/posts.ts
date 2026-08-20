@@ -160,8 +160,7 @@ export async function getPostBySlug(locale: Locale, slug: string) {
   return {
     summary: {
       ...frontmatter,
-      readingTime: estimateReadingTime(source)
-      ,
+      readingTime: estimateReadingTime(source),
       excerpt: createExcerpt(content),
       searchText: [
         frontmatter.title,

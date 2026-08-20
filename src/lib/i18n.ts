@@ -20,6 +20,7 @@ export const dictionary = {
     heroBody:
       "Posting about various things!",
     featuredPosts: "Featured posts",
+    featuredPostsSentence: "These are some of our featured posts.",
     latestPosts: "Latest posts",
     allPosts: "All posts",
     searchPlaceholder: "Search by title, tag, category, or body",
@@ -47,6 +48,7 @@ export const dictionary = {
     heroBody:
       "様々なことについて発信していきます!",
     featuredPosts: "注目記事",
+    featuredPostsSentence: "こちらは注目記事の一覧です。",
     latestPosts: "新着記事",
     allPosts: "すべての記事",
     searchPlaceholder: "タイトル、タグ、カテゴリ、本文で検索",
