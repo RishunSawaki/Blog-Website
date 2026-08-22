@@ -27,8 +27,8 @@ export default async function LocaleHome({ params }: Readonly<{ params: Promise<
   const featuredPosts = await getFeaturedPosts(locale as Locale);
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
-      <section className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+    <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-12">
+      <section className="grid gap-8 lg:grid-cols-[1.45fr_0.55fr] lg:items-end">
         <div className="space-y-6">
           <h1 className="max-w-3xl font-display text-5xl leading-[1.02] font-semibold text-foreground sm:text-6xl lg:text-7xl">
             {messages.heroTitle}
