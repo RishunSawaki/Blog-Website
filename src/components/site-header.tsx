@@ -7,9 +7,10 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import type { Dictionary, Locale } from "@/lib/i18n";
 
 const navItems = [
-  { href: "#featured", labelKey: "featuredPosts" },
+  { href: "/", labelKey: "navHome" },
+  { href: "/#featured", labelKey: "featuredPosts" },
   { href: "/posts", labelKey: "navPosts" },
-  { href: "/search", labelKey: "navSearch" }
+  { href: "/search", labelKey: "navSearch" },
 ] as const;
 
 export function SiteHeader({ locale, messages }: { locale: Locale; messages: Dictionary }) {
@@ -55,9 +56,9 @@ export function SiteHeader({ locale, messages }: { locale: Locale; messages: Dic
             >
               <Menu className="h-4 w-4" />
             </summary>
-            <nav className="absolute top-12 right-0 flex w-56 flex-col gap-1 rounded-2xl border border-border bg-surface p-2 text-sm shadow-glow backdrop-blur-xl">
+            <nav className="absolute top-15 right-0 flex w-56 flex-col gap-1 rounded-2xl border border-border bg-[#E6D7AD] p-2 text-sm shadow-glow backdrop-blur-xl">
               {navItems.map((item) => {
-                const href = item.href.startsWith("#") ? item.href : `/${locale}${item.href}`;
+                const href = `/${locale}${item.href}`;
 
                 return (
                   <Link
