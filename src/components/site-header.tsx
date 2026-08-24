@@ -8,6 +8,7 @@ import type { Dictionary, Locale } from "@/lib/i18n";
 
 const navItems = [
   { href: "/", labelKey: "navHome" },
+  { href: "/about", labelKey: "navAbout" },
   { href: "/#featured", labelKey: "featuredPosts" },
   { href: "/posts", labelKey: "navPosts" },
   { href: "/search", labelKey: "navSearch" },

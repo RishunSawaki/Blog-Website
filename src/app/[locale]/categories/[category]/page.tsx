@@ -12,9 +12,7 @@ export function generateStaticParams() {
   ).then((items) => items.flat());
 }
 
-export default async function CategoryPage({
-  params
-}: Readonly<{ params: Promise<{ locale: string; category: string }> }>) {
+export default async function CategoryPage({ params }: Readonly<{ params: Promise<{ locale: string; category: string }> }>) {
   const { locale, category } = await params;
 
   if (!isLocale(locale)) {

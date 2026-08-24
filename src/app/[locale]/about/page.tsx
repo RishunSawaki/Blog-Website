@@ -18,11 +18,8 @@ export default async function AboutPage({ params }: Readonly<{ params: Promise<{
       <p className="text-sm uppercase tracking-[0.25em] text-foreground/50">{messages.navAbout}</p>
       <h1 className="mt-3 font-display text-4xl font-semibold text-foreground">{messages.siteName}</h1>
       <div className="mt-6 space-y-4 text-lg leading-8 text-foreground/70">
-        <p>
-          This is a personal blog site built to publish technical notes, design sketches, and experiments quickly.
-        </p>
-        <p>
-          The stack emphasizes TypeScript, Next.js, Tailwind CSS, MDX, shiki, and deployment-friendly conventions.
+        <p className="whitespace-pre-line">
+          {messages.aboutStatement}
         </p>
       </div>
     </div>

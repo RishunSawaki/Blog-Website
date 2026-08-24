@@ -17,8 +17,7 @@ export const dictionary = {
     navSearch: "Search",
     navAbout: "About",
     heroTitle: "Uri's personal blog",
-    heroBody:
-      "Posting about various things!",
+    heroBody: "Posting about various things!",
     featuredPosts: "Featured posts",
     featuredPostsSentence: "These are some of our featured posts.",
     latestPosts: "Latest posts",
@@ -36,7 +35,9 @@ export const dictionary = {
     themeTitle: "Theme",
     readingTime: "min read",
     updatedAt: "Updated",
-    publishedAt: "Published"
+    publishedAt: "Published",
+    aboutStatement: `This is a personal blog site built to publish various things.
+                    If you want to know more about me, please check out the link below.`
   },
   ja: {
     siteName: "Uriの部屋",
@@ -64,7 +65,9 @@ export const dictionary = {
     themeTitle: "テーマ",
     readingTime: "分で読める",
     updatedAt: "更新日",
-    publishedAt: "公開日"
+    publishedAt: "公開日",
+    aboutStatement: `このサイトは様々なことについて発信するための個人ブログです。
+                    私が何者かについては以下のリンクをご覧ください。`
   }
 } satisfies Record<Locale, Record<string, string>>;
 
