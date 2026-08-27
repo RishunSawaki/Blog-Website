@@ -34,7 +34,7 @@ export default async function PostsPage({ params }: Readonly<{ params: Promise<{
         <p className="text-sm uppercase tracking-[0.25em] text-foreground/50">{messages.navPosts}</p>
         <h1 className="font-display text-4xl font-semibold text-foreground">{messages.latestPosts}</h1>
         <p className="max-w-2xl text-foreground/65">
-          Browse every article, then filter by category or jump to a tagged route.
+          {messages.latestPostsDescription}
         </p>
       </div>
 

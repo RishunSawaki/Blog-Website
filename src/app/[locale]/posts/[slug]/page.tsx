@@ -98,7 +98,7 @@ export default async function PostPage({ params }: Readonly<{ params: Promise<{ 
               ))}
 
               {relatedPosts.length === 0 && (
-                <p className="text-sm text-foreground/55">No related posts yet.</p>
+                <p className="text-sm text-foreground/55">{messages.noRelatedPosts}</p>
               )}
             </div>
           </section>

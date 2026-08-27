@@ -39,7 +39,12 @@ export const dictionary = {
     updatedAt: "Updated",
     publishedAt: "Published",
     aboutStatement: `This is a personal blog site built to publish various things.
-                    If you want to know more about me, please check out the link below.`
+                    If you want to know more about me, please check out the link below.`,
+    latestPostsDescription: "Browse every article, then filter by category or jump to a tagged route.",
+    noRelatedPosts: "No related posts yet.",
+    searchDescription: "Search for posts by title, tag, category, or body.",
+    tagTitle: "Tag",
+    homeTagSentence: "Browse posts by tag from the home page.",
   },
   ja: {
     siteName: "Uriの部屋",
@@ -71,7 +76,12 @@ export const dictionary = {
     updatedAt: "更新日",
     publishedAt: "公開日",
     aboutStatement: `このサイトは様々なことについて発信するための個人ブログです。
-                    私が何者かについては以下のリンクをご覧ください。`
+                    私が何者かについては以下のリンクをご覧ください。`,
+    latestPostsDescription: "すべての記事を閲覧し、カテゴリー別に絞り込んだりタグ付きルートにジャンプできます。",
+    noRelatedPosts: "関連記事はまだありません。",
+    searchDescription: "タイトル、タグ、カテゴリ、本文で記事を検索できます。",
+    tagTitle: "タグ",
+    homeTagSentence: "ホームからタグ別に記事を探せます。",
   }
 } satisfies Record<Locale, Record<string, string>>;
 

@@ -27,7 +27,7 @@ export default async function SearchPage({ params }: Readonly<{ params: Promise<
       <div className="max-w-2xl space-y-3">
         <p className="text-sm uppercase tracking-[0.25em] text-foreground/50">{messages.navSearch}</p>
         <h1 className="font-display text-4xl font-semibold text-foreground">{messages.searchLabel}</h1>
-        <p className="text-foreground/65">Use the index to search across metadata and excerpts instantly.</p>
+        <p className="text-foreground/65">{messages.searchDescription}</p>
       </div>
 
       <div className="mt-8">

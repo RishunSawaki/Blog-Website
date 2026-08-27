@@ -4,7 +4,7 @@ import { ArrowRight, BookOpenText, Search } from "lucide-react";
 
 import { PostCard } from "@/components/post-card";
 import { dictionary, isLocale, locales, type Locale } from "@/lib/i18n";
-import { getCategories, getFeaturedPosts } from "@/lib/posts";
+import { getCategories, getFeaturedPosts, getTags } from "@/lib/posts";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -24,9 +24,10 @@ export default async function LocaleHome({ params }: Readonly<{ params: Promise<
   }
 
   const messages = dictionary[locale as Locale];
-  const [featuredPosts, categories] = await Promise.all([
+  const [featuredPosts, categories, tags] = await Promise.all([
     getFeaturedPosts(locale as Locale),
-    getCategories(locale as Locale)
+    getCategories(locale as Locale),
+    getTags(locale as Locale)
   ]);
 
   return (
@@ -94,6 +95,30 @@ export default async function LocaleHome({ params }: Readonly<{ params: Promise<
               className="rounded-full border border-border bg-surface px-4 py-2 text-sm text-foreground/75 transition hover:-translate-y-0.5 hover:border-accent/40 hover:text-accent"
             >
               {category}
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section id="tags" className="mt-16 space-y-5 scroll-mt-24">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h2 className="font-display text-3xl font-semibold text-foreground">{messages.tagTitle}</h2>
+            <p className="mt-2 text-sm text-foreground/60">{messages.homeTagSentence}</p>
+          </div>
+          <Link href={`/${locale}/posts`} className="inline-flex items-center gap-2 text-sm text-accent">
+            {messages.allPosts} <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+
+        <div className="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <Link
+              key={tag}
+              href={`/${locale}/tags/${encodeURIComponent(tag)}`}
+              className="rounded-full border border-border bg-surface px-4 py-2 text-sm text-foreground/75 transition hover:-translate-y-0.5 hover:border-accent/40 hover:text-accent"
+            >
+              #{tag}
             </Link>
           ))}
         </div>
